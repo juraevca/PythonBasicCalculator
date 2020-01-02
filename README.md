@@ -1,2 +1,2 @@
 # PythonBasicCalculator
-A simple GUI calculator
+A simple GUI calculator.
