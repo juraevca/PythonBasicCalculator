@@ -8,47 +8,13 @@ def btnClick(numbers):
 def btnClearDisplay():
     global operator
     operator=""
-    text_Input.set("0")
-
-##def btnEqualsInput():
-##    try:
-##        global operator
-##        sumup=str(eval(operator))
-##        text_Input.set(sumup)
-##        operator=""
-##    except :
-##        try:
-##            sumup=str(eval(operator.lstrip("0")))
-##            text_Input.set(sumup)
-##            operator=""
-##        except :
-##            try:
-##                i=19
-##                while i>0:
-##                    for d in range(1,10,1):
-##                        operator=operator.replace('*0%s' % d,'*')
-##                        operator=operator.replace('-0%s' % d,'-')
-##                        operator=operator.replace('+0%s' % d,'+')
-##                        operator=operator.replace('/0%s' % d,'/')
-##                i-=1
-##            sumup2=str(eval(operator.lstrip("0")))
-##            text_Input.set(sumup2)
-##            operator=""
-##            except:
-##                text_Input.set("error")
-##                operator=""
-        
-        
+    text_Input.set("0")      
         
 
 def btnEqualsInput():
     try:
         global operator
 
-##        for i in range(19):
-##            for d in range(1,10):
-##                if operator.startswith("0%s" % d) :
-##                    operator=operator[1:]
         i=19
         while i>0:
             operator=operator.replace('*0','*')
